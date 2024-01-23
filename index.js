@@ -1,15 +1,28 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-// TODO: Create an array of questions for user input
+const generateMarkdown = require('./utils/generateMarkdown');
+// Create an array of questions for user input
 const questions = [{
     type: "input",
     message: "What is the title of your readme?",
     name: "title"
 },{
     type: "input",
-    message: "Please enter your project description:",
-    name: "description"
+    message: "Please enter the motivation of this project:",
+    name: "motivation"
+},{
+    type: "input",
+    message: "Please enter the reason why you build this project:",
+    name: "reason"
+},{
+    type: "input",
+    message: "Please enter what problem it solve:",
+    name: "problem"
+},{
+    type: "input",
+    message: "what do you learn from this project:",
+    name: "learnt"
 },{
     type: "input",
     message: "Please enter installation instructions for your project:",
@@ -20,8 +33,16 @@ const questions = [{
     name: "usage_information"
 },{
     type: "input",
-    message: "Please enter contribution guidelines for your project:",
-    name: "contribution_guidelines"
+    message: "Please enter usage information for your project:(you should save it under ./asset/image)",
+    name: "usage_iamge_name"
+},{
+    type: "input",
+    message: "Please enter collaborators for your project:",
+    name: "collaborators"
+},{
+    type: "input",
+    message: "Please enter collaborators for your project:",
+    name: "third_party_resources"
 },{
     type: "input",
     message: "Please enter test instructions for your project:",
@@ -44,16 +65,12 @@ inquirer
     .prompt(questions)
     .then(
         data =>{
-            console.log(data)
+            writeToFile("README.md", generateMarkdown({...data}));
            
         }
     )
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+// Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('Success!'))
+};
