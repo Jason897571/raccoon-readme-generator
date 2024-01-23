@@ -2,6 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
+
 // Create an array of questions for user input
 const questions = [{
     type: "input",
@@ -61,11 +62,14 @@ const questions = [{
     message: "Please enter your email address:",
     name: "email_address"
 }];
+
+
+// Using inquirer to ask questions
 inquirer
     .prompt(questions)
     .then(
         data =>{
-            writeToFile("README.md", generateMarkdown({...data}));
+            writeToFile("README-DEMO.md", generateMarkdown({...data}));
            
         }
     )

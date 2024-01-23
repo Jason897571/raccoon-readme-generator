@@ -102,13 +102,13 @@ function generateMarkdown(data) {
     test_instructions,
     license,
     github_username,
-    email_address
-   } = data;
+    email_address} = data;
 
-   const license_content = renderLicenseSection(license, github_username);
-   const license_url = renderLicenseLink(license);
-   const license_badge = renderLicenseBadge(license);
-  
+  const license_content = renderLicenseSection(license, github_username);
+  const license_url = renderLicenseLink(license);
+  const license_badge = renderLicenseBadge(license);
+
+  // markdown template
   markdownContent = `# ${title}
 
   ${license_badge}

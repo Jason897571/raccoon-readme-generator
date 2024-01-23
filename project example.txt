@@ -1,0 +1,41 @@
+title：
+raccoon-readme-generator
+
+motivation：
+As a project developer, I need a high quality professional readme file to intruduce my project.
+
+reason：
+It can save my time to create a readme file.
+
+problem：
+I don't need to write markdown readme file from scratch. It saves developer's time.
+
+learnt: 
+I learnt how to use node enviroment to create a project by using inquirer and fs modules.
+
+installation_instructions: 
+You should follow the three instructions below:
+
+usage_information: 
+In the terminal, you should enter node index.js to run the generator. Then you need to aswer all the questions in terminal to generate a readme file.
+
+usage_iamge_name:
+usage.png
+
+collaborators:
+Salvatore Mammoliti - Email - mammoliti.sam@gmail.com
+
+third_party_resources:
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+
+test_instructions:
+You can test it by input node index.js in your terminal and then answer all the questions in terminal.
+
+license:
+MIT License
+
+github_username:
+Jason897571
+
+email_address:
+king.gs1314@outlook.com
