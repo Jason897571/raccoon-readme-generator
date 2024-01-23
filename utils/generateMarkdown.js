@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
@@ -115,16 +115,14 @@ function generateMarkdown(data) {
   
   ## Description
   
-  - The motivation for this project is:${motivation}
-  - The reason why I build this project is:${reason}
-  - The problem this project solved is:${problem}
-  - What I learnt from this project is:${learnt}
+  - The motivation for this project is: ${motivation}
+  - The reason why I build this project is: ${reason}
+  - The problem this project solved is: ${problem}
+  - What I learnt from this project is: ${learnt}
   
   
   ---
-  ## Table of Contents
-  
-  If your README is long, add a table of contents to make it easy for users to find what they need.
+  ## Navigation of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
@@ -142,12 +140,13 @@ function generateMarkdown(data) {
      \`\`\`sh
      git clone https://github.com/${github_username}/${title}.git
      \`\`\`
-  3. Open the project using vs code and run it in browser
+  3. Open the project using vs code and generate the README.md file
+  4. Deploy the project to github pages
   
   
   ---
   ## Usage
-  When you open the project in your browser, you will see the following page.
+  When you open the project in your code editor, you will see the following page.
   
   ${usage_information}
   
@@ -173,7 +172,7 @@ function generateMarkdown(data) {
   ---
   ## Questions
   
-  If you have any questions about the repo, open an issue or contact me directly. You can find this repo at [https://github.com/${github_username}/${title}](https://github.com/${github_username}/${title})
+  If you have any questions about the repo, open an issue or contact me directly. You can find this repo at [Github](https://github.com/${github_username}/${title})
   
   #### Additional questions
   
