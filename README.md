@@ -51,7 +51,7 @@
 
 <p><strong>Start Page</strong></p>
 
-![Alt text](./Assets/image/index.png)
+![Alt text](./assets/image/index.png)
 
 <br />
 
