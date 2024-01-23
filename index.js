@@ -51,7 +51,7 @@ const questions = [{
     type: "list",
     message: "Please choose your license for the project:" ,
     name: "license",
-    choices:["MIT License","Apache License 2.0","Boost Software License 1.0"]
+    choices:["MIT License","Apache License 2.0","GNU General Public License v3.0"]
 },{
     type: "input",
     message: "Please enter your github username:",

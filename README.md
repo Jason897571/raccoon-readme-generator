@@ -54,7 +54,7 @@ ${third_party_resources}
 ---
 ## License
 
-${license}
+[${license}](${license_url})
 
 ${license_content}
 
