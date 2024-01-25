@@ -42,7 +42,7 @@ const questions = [{
     name: "collaborators"
 },{
     type: "input",
-    message: "Please enter collaborators for your project:",
+    message: "Please enter links of third party resources for your project:",
     name: "third_party_resources"
 },{
     type: "input",
@@ -69,12 +69,12 @@ inquirer
     .prompt(questions)
     .then(
         data =>{
-            writeToFile("README-DEMO.md", generateMarkdown({...data}));
+            writeToFile("./demo/README-DEMO.md", generateMarkdown({...data}));
            
         }
     )
 
 // Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('Success!'))
+    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('Readme file created Successfully!'))
 };

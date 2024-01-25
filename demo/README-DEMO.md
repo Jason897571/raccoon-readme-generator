@@ -37,7 +37,7 @@
   ## Usage
   When you open the project in your code editor, you will see the following page.
   
-  In the terminal, you should enter node index.js to run the generator. Then you need to aswer all the questions in terminal to generate a readme file.
+  In the terminal, you should enter node index.js to run the generator. 
   
   ![Alt text](./assets/image/usage.png)
   
